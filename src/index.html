@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&family=Kanit:wght@300;400;700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <link rel="stylesheet" href="./output.css">
+    <title>Personal Web</title>
+</head>
+<body class="dark:bg-zinc-800">
+
+    <!-- navbar -->
+    <header class="py-10">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="text-zinc-950 dark:text-zinc-100 font-bold z-50">
+                <a href="#" class="text-2xl sm:text-3xl">Hamza Alsewaidi</a>
+            </div>
+
+            <div class="nav-links duration-200 absolute lg:static lg:min-h-fit lg:w-auto bg-white dark:bg-zinc-800 min-h-[60vh] left-0 top-[-100%] w-full flex p-5 justify-center text-center items-center">
+                <nav class="text-zinc-800 dark:text-zinc-300 sm:text-base gap-16 flex lg:flex-row flex-col">
+                    <a class="text-xl hover:text-zinc-500 hover:underline transition duration-200" href="#about">About</a>
+                    <a class="text-xl hover:text-zinc-500 hover:underline transition duration-200" href="#experience">Experience</a>
+                    <a class="text-xl hover:text-zinc-500 hover:underline transition duration-200" href="#projects">Projects</a>
+                    <a class="text-xl hover:text-zinc-500 hover:underline transition duration-200" href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl text-zinc-950 dark:text-zinc-100 hover:text-zinc-500 transition duration-200 cursor-pointer lg:hidden"></ion-icon>
+                <i class="moon fa-solid text-zinc-800 fa-moon cursor-pointer text-3xl ml-5 mb-1 dark:text-zinc-300 dark:hover:text-zinc-500 hover:text-zinc-500 transition duration-200"></i>
+                <i class="sun fa-solid text-zinc-800 fa-sun cursor-pointer text-3xl ml-5 mb-1 dark:text-zinc-300 dark:hover:text-zinc-500 hover:text-zinc-500 transition duration-200"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- profile -->
+    <div class="container md:grid grid-cols-2 mx-auto justify-center items-center py-16">
+        <div class="justify-center flex">
+            <img src="../img/IMG_E8011.jpg" class="personal_img w-[20rem] h-[20rem] sm:w-[25rem] sm:h-[25rem] object-cover object-top">
+        </div>
+        <div class="text-center">
+            <h3 class="text-zinc-600 dark:text-zinc-400 font-bold text-lg pt-10 md:pt-0">Hello, I'm</h3>
+            <h1 class="text-zinc-950 dark:text-zinc-100 font-bold text-6xl py-4">Hamza Alsewaidi</h1>
+            <h2 class="font-bold text-zinc-700 dark:text-zinc-300 text-2xl">Full-Stack Web Developer</h2>
+            <h2 class="font-bold text-zinc-700 dark:text-zinc-300 text-2xl">And</h2>
+            <h2 class="font-bold text-zinc-700 dark:text-zinc-300 text-2xl">Designer</h2>
+            <div class="pt-10">
+                <a class="text-lg px-6 rounded-full border-2 border-zinc-700 dark:border-zinc-300 dark:text-zinc-100 dark:hover:bg-zinc-300 dark:hover:text-zinc-950 text-zinc-950 py-4 font-bold hover:bg-zinc-700 hover:text-zinc-100 transition duration-200" href="#">Download CV</a>
+                <a class="text-lg px-6 rounded-full bg-zinc-700 dark:bg-zinc-300 dark:text-zinc-950 dark:hover:text-zinc-100 dark:hover:border-zinc-300 py-4 text-zinc-100 font-bold hover:text-zinc-950 hover:border-2 hover:border-zinc-700 dark:hover:bg-inherit hover:bg-inherit transition duration-200" href="#contact">My Accounts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+     <div id="about" class="text-center text-zinc-950 dark:text-zinc-100 text-5xl py-16 font-bold reveal">
+        <h1 class="uppercase">About Me</h1>
+     </div>
+
+     <div class="container md:grid grid-cols-2 gap-10 mx-auto justify-center items-center reveal">
+        <div class="flex justify-center mb-5 md:mb-0">
+            <img src="../img/IMG_7263.jpg" class="w-96 object-cover rounded-3xl">
+        </div>
+        <div class="flex-col">
+        <div class="h-52 content-center border-2 my-10 border-zinc-700 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <i class="fa-solid fa-certificate h-6 text-zinc-950 dark:text-zinc-100 group-hover:text-zinc-100"></i>
+            <h1 class="font-bold text-xl text-zinc-950 dark:text-zinc-100 group-hover:text-zinc-100 uppercase">Experience</h1>
+            <h3 class="text-lg text-zinc-600 dark:text-zinc-300 group-hover:text-zinc-300">4+ Years</h3>
+            <h3 class="text-lg text-zinc-600 dark:text-zinc-300 group-hover:text-zinc-300">Full-Stack Web Developer</h3>
+            <h3 class="text-lg text-zinc-600 dark:text-zinc-300 group-hover:text-zinc-300">3+ Years</h3>
+            <h3 class="text-lg text-zinc-600 dark:text-zinc-300 group-hover:text-zinc-300">Designer</h3>
+        </div>
+        <div class="h-52 content-center border-2 my-10 border-zinc-700 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <i class="fa-solid fa-school h-6 text-zinc-950 dark:text-zinc-100 group-hover:text-zinc-100"></i>
+            <h1 class="font-bold text-xl text-zinc-950 dark:text-zinc-100 uppercase group-hover:text-zinc-100">Education</h1>
+            <h3 class="text-lg text-zinc-600 dark:text-zinc-300 group-hover:text-zinc-300">Baghdad College High School</h3>
+        </div>
+    </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience" class="text-center text-zinc-950 dark:text-zinc-100 text-5xl py-16 font-bold reveal">
+        <h1 class="uppercase">Experience</h1>
+     </div>
+
+     <div class="container lg:grid grid-cols-3 gap-10 mx-auto justify-center items-center reveal">
+        <div class="h-80 pt-6 border-2 my-10 border-zinc-700 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <h1 class="font-bold text-zinc-700 dark:text-zinc-300 text-2xl uppercase pb-5 group-hover:text-zinc-300">Frontend Development</h1>
+            <div class="grid grid-cols-2">
+                <div class="pl-10">
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">HTML</h1>
+                        </div>
+                    </article>
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">Tailwind</h1>
+                        </div>
+                    </article>
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">JavaScript</h1>
+                        </div>
+                    </article>
+                </div>
+                <div class="pr-10">
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">CSS</h1>
+                        </div>
+                    </article>
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">Bootstrap</h1>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="h-80 pt-6 border-2 my-10 border-zinc-700 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <h1 class="font-bold text-zinc-700 text-2xl uppercase group-hover:text-zinc-300 dark:text-zinc-300">Backend Development</h1>
+            <div class="grid grid-cols-2">
+                <div class="pl-10">
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">PHP</h1>
+                        </div>
+                    </article>
+                </div>
+                <div class="pr-10">
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">Laravel</h1>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="h-80 pt-6 border-2 my-10 border-zinc-700 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <h1 class="font-bold text-zinc-700 text-2xl uppercase group-hover:text-zinc-300 dark:text-zinc-300">Design</h1>
+            <div class="grid grid-cols-2">
+                <div class="pl-10">
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">Illustrator</h1>
+                        </div>
+                    </article>
+                </div>
+                <div class="pr-10">
+                    <article class="flex py-6">
+                        <i class="fa-solid fa-circle-check text-zinc-950 dark:text-zinc-100 h-5 pr-5 mt-1 group-hover:text-zinc-100"></i>
+                        <div>
+                            <h1 class="font-bold text-zinc-950 dark:text-zinc-100 text-lg group-hover:text-zinc-100">Photoshop</h1>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Projects -->
+     <div id="projects" class="text-center text-zinc-950 dark:text-zinc-100 text-5xl py-16 font-bold reveal">
+        <h1 class="uppercase">Projects</h1>
+     </div>
+
+     <div class="container md:grid grid-cols-3 gap-10 mx-auto justify-center items-center reveal">
+        <div class="border-2 border-zinc-700 p-5 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <img src="../img/تغيير logo.png" class="h-96 w-96 object-cover rounded-3xl" alt="">
+            <h1 class="font-bold text-2xl pt-5 text-zinc-950 dark:text-zinc-100 group-hover:text-zinc-100">Logos</h1>
+        </div>
+        <div class="border-2 border-zinc-700 p-5 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <img src="../img/Screenshot 2024-08-05 152338.png" class="h-96 w-96 object-cover object-top rounded-3xl" alt="">
+            <h1 class="font-bold text-2xl pt-5 text-zinc-950 dark:text-zinc-100 group-hover:text-zinc-100">Study Web</h1>
+        </div>
+        <div class="border-2 border-zinc-700 p-5 rounded-3xl text-center hover:bg-zinc-700 transition duration-200 group cursor-pointer">
+            <img src="../img/اعلان دورة تدريبية.png" class="h-96 w-96 object-cover rounded-3xl" alt="">
+            <h1 class="font-bold text-2xl pt-5 text-zinc-950 dark:text-zinc-100 group-hover:text-zinc-100">Designs</h1>
+        </div>
+     </div>
+
+     <!-- contact -->
+     <div id="contact" class="text-center text-zinc-950 dark:text-zinc-100 text-5xl pt-60 pb-16 font-bold reveal">
+        <h1 class="uppercase">contact me</h1>
+     </div>
+
+     <div class="w-fit mx-auto justify-center items-center text-center border-2 border-zinc-700 rounded-3xl py-4 my-10">
+        <a href="https://www.instagram.com/h.alsewaidi_?igsh=MTNpengyNTd1YWpscQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram text-3xl text-zinc-700 dark:text-zinc-400 px-5 hover:text-zinc-950 dark:hover:text-zinc-100 transition duration-200"></i></a>
+        <a href="https://www.facebook.com/share/4jj5jYCDtMJuoEjb/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook text-3xl text-zinc-700 dark:text-zinc-400 px-5 hover:text-zinc-950 dark:hover:text-zinc-100 transition duration-200"></i></a>
+        <a href="https://www.tiktok.com/@h.alsewaidi_?_t=8ocON5HOqFk&_r=1"><i class="fa-brands fa-tiktok text-3xl text-zinc-700 dark:text-zinc-400 px-5 hover:text-zinc-950 dark:hover:text-zinc-100 transition duration-200"></i></a>
+        <a href="https://www.youtube.com/@hamzaalsewaidi"><i class="fa-brands fa-youtube text-3xl text-zinc-700 dark:text-zinc-400 px-5 hover:text-zinc-950 dark:hover:text-zinc-100 transition duration-200"></i></a>
+     </div>
+
+     <a href="#" class="to-top">
+        <i class="fas fa-chevron-up text-zinc-100 bg-zinc-500 rounded-full p-1 hover:bg-zinc-700 duration-200 text-3xl"></i>
+    </a>
+
+     <footer class="container mx-auto justify-center items-center text-center py-5 font-bold">
+        <h1 class="text-zinc-500">Copyright © 2024 Hamza Alsewaidi All Rights Reserved</h1>
+     </footer>
+</body>
+</html>
+
+
+
+
+<script src="./script.js"></script>

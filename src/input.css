@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.display-none{
+  @apply hidden;
+}
+
+
+body , html{
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+}
+
+.container {
+    width: 100%;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+    .lg\:grid {
+      display: grid;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+
+  .personal_img{
+    border-radius: 50%;
+  }
+
+
+  .to-top{
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
